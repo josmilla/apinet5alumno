@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d9c72240-adb3-42b6-98ce-e66e6637afcd": {
+      "ProjectGuid": "d9c72240-adb3-42b6-98ce-e66e6637afcd",
+      "DisplayName": "Net5Crud.Clientes",
+      "ColorIndex": 0
+    },
+    "841a8d8b-1c4b-4e20-a7be-127eb4272a64": {
+      "ProjectGuid": "841a8d8b-1c4b-4e20-a7be-127eb4272a64",
+      "DisplayName": "NetApi.Clients",
+      "ColorIndex": 1
+    },
+    "df1869bb-b5b8-4531-88a0-42e33a1de931": {
+      "ProjectGuid": "df1869bb-b5b8-4531-88a0-42e33a1de931",
+      "DisplayName": "Net5.NUnit",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

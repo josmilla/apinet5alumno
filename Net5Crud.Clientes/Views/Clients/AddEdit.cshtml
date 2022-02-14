@@ -1,0 +1,56 @@
+﻿@model Net5Crud.Clientes.Entities.Client
+@{
+    ViewData["Title"] = "Mantenimiento";
+}
+<h4>Mantenedor de Alumnos</h4>
+<hr />
+ 
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AddEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Nombres" class="control-label"></label>
+                    <input asp-for="Nombres" class="form-control" />
+                    <span asp-validation-for="Nombres" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Apellidos" class="control-label"></label>
+                    <input asp-for="Apellidos" class="form-control" />
+                    <span asp-validation-for="Apellidos" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Edad" class="control-label"></label>
+                <input asp-for="Edad" class="form-control" />
+                <span asp-validation-for="Edad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nivel" class="control-label"></label>
+                <input asp-for="Nivel" class="form-control" />
+                <span asp-validation-for="Nivel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaRegistro" class="control-label"></label>
+                <input asp-for="FechaRegistro" class="form-control" type="date" />
+                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+            </div>
+ 
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="submit" value="Enviar" class="btn btn-primary btn-block" />
+                </div>
+                <div class="form-group col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Volver a listado</a>
+                </div>
+            </div>
+ 
+        </form>
+    </div>
+</div>
+ 
+@*Se agrega esta sección para que funcione la validación frontend*@
+@section Scripts{ 
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,44 @@
+﻿@model  Net5Crud.Clientes.Models.ClsUsuario
+@{
+   ViewData["Title"] = "Acceso";
+}
+<h4>Acceso al Sistema</h4>
+<hr />
+ 
+ <div class="row">
+    <div class="col-md-6">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>  
+       <div class="form-row">
+       
+      
+                <div class="form-group col-md-6">
+                    <label asp-for="usuario" class="control-label"> Usuario </label>
+                    <input asp-for="usuario" class="form-control" />
+                    <span asp-validation-for="usuario" class="text-danger"></span>
+                </div>
+                 <div class="form-group col-md-6">
+                    <label asp-for="contrasena" class="control-label"> Contraseña </label>
+                    <input asp-for="contrasena" class="form-control" />
+                    <span asp-validation-for="contrasena" class="text-danger"></span>
+                </div>
+        </div>
+    
+                <div class="form-row">
+                     <div class="form-group col-md-6">
+                         <input type="submit" value="Iniciar sesión" class="btn btn-primary btn-block" />
+                    </div>
+                
+                </div>
+                
+        </form>  
+        
+   
+     </div>
+</div>
+ 
+
+@*Se agrega esta sección para que funcione la validación frontend*@
+@section Scripts{ 
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

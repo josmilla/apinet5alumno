@@ -1,0 +1,6 @@
+C:\Documentos\jose\bcp\Cursos NET\descargas\Net5-Desarrollo-202112\CrudNetAlu\Net5Crud.Clientes\Net5.NUnit\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Documentos\jose\bcp\Cursos NET\descargas\Net5-Desarrollo-202112\CrudNetAlu\Net5Crud.Clientes\Net5.NUnit\obj\Debug\net5.0\Net5.NUnit.csproj.AssemblyReference.cache
+C:\Documentos\jose\bcp\Cursos NET\descargas\Net5-Desarrollo-202112\CrudNetAlu\Net5Crud.Clientes\Net5.NUnit\obj\Debug\net5.0\Net5.NUnit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\jose\bcp\Cursos NET\descargas\Net5-Desarrollo-202112\CrudNetAlu\Net5Crud.Clientes\Net5.NUnit\obj\Debug\net5.0\Net5.NUnit.AssemblyInfoInputs.cache
+C:\Documentos\jose\bcp\Cursos NET\descargas\Net5-Desarrollo-202112\CrudNetAlu\Net5Crud.Clientes\Net5.NUnit\obj\Debug\net5.0\Net5.NUnit.AssemblyInfo.cs
+C:\Documentos\jose\bcp\Cursos NET\descargas\Net5-Desarrollo-202112\CrudNetAlu\Net5Crud.Clientes\Net5.NUnit\obj\Debug\net5.0\Net5.NUnit.csproj.CoreCompileInputs.cache
