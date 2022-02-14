@@ -17,6 +17,6 @@ jobs:
         dotnet-version: 5.0.x
     
     - name: Build
-      run: dotnet build  "/apinet5alumno/Net5Crud.Clientes" --configuration Release
+      run: dotnet build  "Net5Crud.Clientes" --configuration Release
     - name: Test
       run: dotnet test --no-build --verbosity normal
