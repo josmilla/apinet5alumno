@@ -26,6 +26,6 @@ jobs:
         appname: webapinet5.azurewebsites.net
         publish-profile: ${{NET5_DEPLOYMENT_API}}
         package: ./Api
-      run: dotnet build  "Net5Crud.Clientes" -c Release -o Api   
+         
     - name: Test
       run: dotnet test --no-build --verbosity normal
