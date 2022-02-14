@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  Build-Api:
+  Build-Deploy-Api:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -19,12 +19,12 @@ jobs:
     - name: Build
       run: dotnet build  "Net5Crud.Clientes" --configuration Release
     - name: Publish
-      run: dotnet build  "Net5Crud.Clientes" -c Release -o Api
+      run: dotnet publish  "Net5Crud.Clientes" -c Release -o Api
     - name: Run Azure appservice Deploy
-      uses: Azure /webapps-deploy@v2
+      uses: Azure/webapps-deploy@v2
       with: 
-        appname: webapinet5.azurewebsites.net
-        publish-profile: ${{NET5_DEPLOYMENT_API}}
+        appname: webapinet5
+        publish-profile: ${{SECRET_DEPLOY}}
         package: ./Api
          
     - name: Test
