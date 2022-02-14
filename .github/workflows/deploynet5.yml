@@ -24,7 +24,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with: 
         appname: webapinet5
-        publish-profile: ${{ secret.SECRET_DEPLOY}}
+        publish-profile: ${{ secrets.SECRET_DEPLOY}}
         package: ./Api
          
     - name: Test
